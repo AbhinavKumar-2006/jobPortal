@@ -6,7 +6,7 @@ const userSchema = new Schema({
     name : {type : String , required : true},
     email : {type : String , required : true , unique:true},
     resume : {type : String},
-    Image : {type : String},
+    image : {type : String},
 })
 
 const User = mongoose.model('User' , userSchema);
